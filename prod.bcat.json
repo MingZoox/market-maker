@@ -1,0 +1,18 @@
+{
+  "apps": [
+    {
+      "name": "prod.bcat.mm.sell_bot",
+      "script": "cargo run -r -p mm_token_rs --bin sell_bot",
+      "namespace": "prod.bcat",
+      "instances": 1,
+      "restart_delay": 2000
+    },
+    {
+      "name": "prod.bcat.mm-volume",
+      "script": "cargo run -r -p mm_token_rs --bin market_make",
+      "namespace": "prod.bcat",
+      "instances": 1,
+      "restart_delay": 2000
+    }
+  ]
+}

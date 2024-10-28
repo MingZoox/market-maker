@@ -1,0 +1,28 @@
+{
+  "defaultSettings": {
+    "maxWalletsCount": 100,
+    "minBuyVolume": 10,
+    "maxBuyVolume": 20,
+    "minDelayTime": 20,
+    "maxDelayTime": 60,
+    "minRetainToken": 100,
+    "maxRetainToken": 200
+  },
+  "groups": [
+    {
+      "mnemonic": "abc",
+      "minDelayTime": 180,
+      "maxDelayTime": 600
+    },
+    {
+      "mnemonic": "abc",
+      "minDelayTime": 180,
+      "maxDelayTime": 600
+    },
+    {
+      "mnemonic": "abc",
+      "minDelayTime": 180,
+      "maxDelayTime": 600
+    }
+  ]
+}

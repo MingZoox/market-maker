@@ -1,0 +1,39 @@
+{
+  "apps": [
+    {
+      "name": "dev.base.avabot.meme-mm.sell",
+      "script": "cargo run -r",
+      "namespace": "base.avabot.meme-mm",
+      "instances": 1,
+      "restart_delay": 2000
+    },
+    {
+      "name": "dev.base.avabot.meme-mm.buy_bot",
+      "script": "cargo run -r -p mm_token_rs --bin buy_bot",
+      "namespace": "base.avabot.meme-mm",
+      "instances": 1,
+      "restart_delay": 2000
+    },
+    {
+      "name": "dev.base.avabot.meme-mm.volume",
+      "script": "cargo run -r -p mm_token_rs --bin market_make",
+      "namespace": "base.avabot.meme-mm",
+      "instances": 1,
+      "restart_delay": 2000
+    },
+    {
+      "name": "dev.base.avabot.meme-mm.api",
+      "script": "cargo run -r -p mm_token_rs --bin api_web_server",
+      "namespace": "base.avabot.meme-mm",
+      "instances": 1,
+      "restart_delay": 2000
+    },
+    {
+      "name": "dev.base.avabot.meme-mm.telegram_monitor_bot",
+      "script": "cargo run -r -p telegram_bot_rs --bin telegram_monitor_bot",
+      "namespace": "base.avabot.meme-mm",
+      "instances": 1,
+      "restart_delay": 2000
+    }
+  ]
+}

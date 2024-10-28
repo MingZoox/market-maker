@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "name": "eth.meme-mmm.zoom.sell",
+      "script": "cargo run -r -p mm_token_rs --bin sell_bot",
+      "namespace": "eth.meme-mm.zoom",
+      "instances": 1,
+      "restart_delay": 2000
+    }
+  ]
+}

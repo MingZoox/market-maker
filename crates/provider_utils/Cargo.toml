@@ -1,0 +1,15 @@
+[package]
+name = "provider_utils"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ethers = { workspace = true }
+anyhow = { workspace = true }
+tokio = { workspace = true }
+tokio-stream = { workspace = true }
+serde = { workspace = true }
+strum = { workspace = true }
+strum_macros = { workspace = true }
+cached = { workspace = true }
+log = { workspace = true }

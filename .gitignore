@@ -1,0 +1,14 @@
+# editors
+.vscode
+.DS_Store
+.idea
+
+# rust
+target
+
+# secrets
+.env
+.env.*
+*.pem
+
+mm_config.json

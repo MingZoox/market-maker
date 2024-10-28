@@ -1,0 +1,25 @@
+{
+  "apps": [
+    {
+      "name": "prod.blast.avabot.meme-mm.sell",
+      "script": "cargo run -r",
+      "namespace": "blast.avabot.meme-mm",
+      "instances": 1,
+      "restart_delay": 2000
+    },
+    {
+      "name": "prod.base.avabot.meme-mm.buy_bot",
+      "script": "cargo run -r -p mm_token_rs --bin buy_bot",
+      "namespace": "base.avabot.meme-mm",
+      "instances": 1,
+      "restart_delay": 2000
+    },
+    {
+      "name": "prod.blast.avabot.meme-mm.volume",
+      "script": "cargo run -r -p mm_token_rs --bin market_make",
+      "namespace": "blast.avabot.meme-mm",
+      "instances": 1,
+      "restart_delay": 2000
+    }
+  ]
+}
